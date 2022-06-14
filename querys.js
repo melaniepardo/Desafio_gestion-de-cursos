@@ -11,7 +11,7 @@ async function nuevoCurso(curso) {
     const valores = Object.values(curso)
     try {
         const result = await pool.query(
-            `INSERT INTO cursos (nombre, nivel, fecha, duracion) VALUES($1, $2, $3, $4) RETURNING *;`, valores
+            `INSERT INTO cursos (nombre, nivel, fecha,duracion) VALUES($1, $2, $3, $4) RETURNING *;`, valores
         );
         return result.rows;
     } catch (e) {
@@ -34,7 +34,7 @@ async function editarCurso(id, curso) {
     valores.push(id)
     try {
         const res = await pool.query(
-            "UPDATE cursos SET nombre=$1, nivel=$2, fecha=$3,duracion=$4 WHERE id=$5 RETURNING *", valores
+            "UPDATE cursos SET nombre=$1, nivel=$2, fecha=$3, duracion=$4 WHERE id=$5 RETURNING *", valores
         );
         return res.rows;
     } catch (e) {

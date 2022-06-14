@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const { nuevoCurso, getCursos, editarCurso, eliminarCurso } = require("./gestion");
+const { nuevoCurso, getCursos, editarCurso, eliminarCurso } = require("./querys");
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
