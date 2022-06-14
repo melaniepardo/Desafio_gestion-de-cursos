@@ -10,9 +10,9 @@ Aplicación que permite hacer un CRUD de los cursos de una Academia usando una A
 - PUT (UPDATE) & DELETE (DELETE)
 
 ## Instrucciones 📌
-- Después de descargar el proyecto, desde VSC abra una nueva terminal y ejecute : `npm install` y luego
-`node index.js`
-P.D: No olvide ingresar su clave de posgressql al archivo gestion.js y entre otras crear datdabase, conectarse a ella y crear tabla.
+- Después de descargar el proyecto, desde VSC abra una nueva terminal y ejecute `npm install` y luego `node index.js`
+-No olvide ingresar su clave de posgressql al archivo querys.js y entre otras, crear datdabase, conectarse a ella y crear tabla.
+- Use http://localhost:3000/ en el navegador. 
 
 ## Librerías 📌
 - Javascript v16.13.2
